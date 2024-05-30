@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -8,12 +7,12 @@ import Library from "./chapter03/Library";
 import Clock from "./chapter04/Clock";
 import {createRoot} from "react-dom/client";
 
+const root = createRoot(document.getElementById("root"));
 setInterval(() => {
-  ReactDOM.render(
+  root.render(
     <React.StrictMode>
       <Clock/>
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
   );
 }, 1000);
 
