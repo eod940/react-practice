@@ -7,11 +7,12 @@ import Library from "./chapter03/Library";
 import Clock from "./chapter04/Clock";
 import {createRoot} from "react-dom/client";
 import CommentList from "./chapter05/CommentList";
+import NotificationList from "./chapter06/NotificationList";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CommentList/>
+    <NotificationList/>
   </React.StrictMode>
 );
 
