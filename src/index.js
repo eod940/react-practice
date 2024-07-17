@@ -8,12 +8,13 @@ import Clock from "./chapter04/Clock";
 import {createRoot} from "react-dom/client";
 import CommentList from "./chapter05/CommentList";
 import NotificationList from "./chapter06/NotificationList";
+import Accommodate from "./chapter07/Accommodate"
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <NotificationList/>
-  </React.StrictMode>
+  // <React.StrictMode>
+    <Accommodate/>
+  // </React.StrictMode>
 );
 
 
